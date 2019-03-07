@@ -7,6 +7,7 @@ import {
   Text,
   TouchableOpacity,
   View,
+
 } from 'react-native';
 import { WebBrowser } from 'expo';
 
@@ -20,6 +21,9 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+      <Text style={styles.baseText}>
+        <Text>Hello World</Text>
+      </Text>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
           <View style={styles.welcomeContainer}>
             <Image
@@ -42,7 +46,7 @@ export default class HomeScreen extends React.Component {
             </View>
 
             <Text style={styles.getStartedText}>
-              Change this text and your app will automatically reload.
+              Hello World.
             </Text>
           </View>
 
